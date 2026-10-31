@@ -674,3 +674,10 @@ dialog::backdrop { background: rgba(11, 61, 46, 0.55); backdrop-filter: blur(3px
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Navbar: single Rewards & Leaderboard icon link */
+.nav-links a.nav-trophy { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .9rem; border-radius: 999px; background: linear-gradient(135deg, #fff3c4, #ffe08a); color: #7a5200; font-weight: 700; box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
+.nav-links a.nav-trophy::after { display: none; }
+.nav-links a.nav-trophy:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.nav-links a.nav-trophy .trophy-ic { font-size: 1.1rem; animation: trophyWiggle 3s ease-in-out infinite; }
+@keyframes trophyWiggle { 0%, 88%, 100% { transform: rotate(0); } 92% { transform: rotate(-14deg); } 96% { transform: rotate(14deg); } }
